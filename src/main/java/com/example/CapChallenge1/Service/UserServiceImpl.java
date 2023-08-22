@@ -7,7 +7,6 @@ import com.example.CapChallenge1.Repository.UserRepository;
 import com.example.CapChallenge1.dto.UserDto;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

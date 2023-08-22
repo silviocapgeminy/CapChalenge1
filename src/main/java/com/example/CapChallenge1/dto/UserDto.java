@@ -1,5 +1,4 @@
 package com.example.CapChallenge1.dto;
-
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
