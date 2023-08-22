@@ -3,6 +3,7 @@ import com.example.CapChallenge1.Model.User;
 import com.example.CapChallenge1.Service.UserService;
 import com.example.CapChallenge1.dto.UserDto;
 import jakarta.validation.Valid;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,18 +12,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@org.springframework.stereotype.Controller
-public class Controller {
+@Controller
+public class LoginController {
 
     private UserService userService;
 
-    public Controller(UserService userService) {
+    public LoginController(UserService userService) {
         this.userService = userService;
     }
 
-    @GetMapping("home")
+    @GetMapping("index")
     public String home(){
-        return "home";
+        return "index";
     }
 
     @GetMapping("/login")

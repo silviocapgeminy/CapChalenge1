@@ -15,5 +15,6 @@ public class UserDto
     private Long id;
     @NotEmpty
     private String name;
+    @NotEmpty
     private String password;
 }
