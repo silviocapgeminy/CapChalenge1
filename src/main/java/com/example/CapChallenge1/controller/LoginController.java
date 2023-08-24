@@ -49,7 +49,7 @@ public class LoginController {
         }
         if (result.hasErrors()) {
             model.addAttribute("user", user);
-            return "register";
+            return "/register";
         }
         userService.saveUser(user);
         return "redirect:/register?success";
